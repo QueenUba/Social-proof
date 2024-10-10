@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+font-family: "League Spartan", sans-serif;
+font-size: 0.9375rem;
+color: hsl(300, 43%, 22%);
+height: 100vh;
+width: 100vw;
+padding-inline: 1rem;
+}
+.Main-Rating {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;  
+}
+.Rating p {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+.Stars-n-rating {
+  border-radius: 0.5rem;
+  background-color: hsl(300, 24%, 96%);
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;   
+}
+.rating {
+  font-weight: 700;
+}
+.Card {
+  border-radius: 0.5rem; 
+  color: hsl(0, 0%, 100%);
+  background-color:hsl(300, 43%, 22%) ;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.Buyer {
+  display: flex;
+  padding: 1rem;
+}
+.Buyer img {   
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+.Buyer p {
+  padding-left : 0.75rem;
+}
+span {
+  color:hsl(333, 80%, 67%) ;
+}
+.bottom-ddesign , .top-ddesign {
+  display: none;
+}
+.top-mdesign {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bottom-mdesign {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+@media screen and (min-width : 64rem) {
+   body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+   } 
+   .Parent-Container {
+    height: 100vh;
+    width: 100vw;
+    padding: 3rem;
+   }
+   .Main-Rating {
+    display:flex; 
+   } 
+   .Rating {
+    text-align: start;
+    margin-right: 1rem;
+   }
+   .Rating h1 {
+    width: 60%;
+   }
+   .Rating p {
+    width: 75%;
+    margin-bottom: 0;
+   }
+   .Rating , .Star-Rating {
+    width: 50%;
+   }
+   .Star-Rating {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    justify-content: space-between;
+   }
+   .top-ddesign {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+   }
+   .bottom-ddesign {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+   }
+   .Stars-n-rating {
+    height: 3rem;
+    width: 20rem;
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 0; 
+   }
+   .rating {
+    padding-left: 0.5rem;
+   }
+    .Stars-n-rating:nth-child(2) {
+    align-self: center;
+   }
+   .Stars-n-rating:last-child {
+    align-self: end;
+   } 
+   .Card-Container {
+    display: flex;
+    justify-content: space-between;
+    height: 15.5rem;
+   }
+   .Card {
+    margin-bottom: 0;
+    height: 12rem;
+    width: 17rem;
+   }
+   .Card:nth-child(2){
+    align-self: center;
+   }
+   .Card:nth-child(3) {
+    align-self: end;
+   }
+   .bottom-mdesign {
+    display: none;
+   }
+   .top-mdesign {
+    display: none;   
+    }
+   }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
